@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bebas+Neue&family=Josefin+Slab:wght@100&family=Merriweather:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed&family=Rubik+Mono+One&family=Tajawal:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* maintenir les dimensions d'une div avec son padding */
+    text-decoration: none; /* supprime les barres des liens */
+    
+}
+ html {
+     font-size: 62.5%; /* 1rem = 10px */
+ }
+
+ body {
+     font-size: 1.4rem ; /* 14 px*/
+     font-family: 'Josefin Slab', serif;
+     color: #272727;
+ }
+
+ .container {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     background-color: #eae1d4;
+ }
+
+ .question {
+    display: flex; /* permet de positionner <p> et <i> */
+    justify-content: space-between; /* permet l'espace entre les 2 balises */
+    align-items: center; /* items au milieu de la box */
+    border-bottom: 1px solid #777;
+    background-color:#272727;
+    padding: 2rem;
+    width: 50rem;
+    height: 6rem;
+    color: cornsilk;
+ }
+
+ .reponse {
+     color: #272727;
+     background-color: #eae1d4;
+     padding: 3rem;
+     display: none; /*permet de rendre les réponses invisibles au démarrage de l'appli */
+ }
+
+ .visible { /* classe pour rendre visible ou invisible les réponses */
+     display: block;
+ }
